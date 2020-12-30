@@ -65,6 +65,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biQ-P0-1gu">
                                 <rect key="frame" x="181" y="169" width="31" height="30"/>
                                 <state key="normal" title="計算"/>
+                                <connections>
+                                    <action selector="culculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BdL-0e-ixW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -92,6 +95,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8jB-Pt-JR9" secondAttribute="trailing" constant="40" id="zVz-5n-sMI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="kekkaLabel" destination="nJ0-Ll-Mzx" id="XLH-Sq-0io"/>
+                        <outlet property="zeinukiTextField" destination="SYO-Km-H8p" id="eyN-wY-OYo"/>
+                        <outlet property="zeirituTextField" destination="yDh-mH-LGV" id="rb8-7O-sAh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
