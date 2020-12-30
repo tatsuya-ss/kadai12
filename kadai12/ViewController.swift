@@ -15,7 +15,7 @@ final class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let zei = UserDefaults.standard.string(forKey: "zei") {
+        if let zei = UserDefaults.standard.string(forKey: UserDefaultsKey.tax) {
             self.zeirituTextField.text = zei
         }
     }
@@ -26,7 +26,7 @@ final class ViewController: UIViewController {
         let kekka = zeinuki * zeiritu
         kekkaLabel.text = "\(Int(kekka))円"
         
-        UserDefaults.standard.setValue(self.zeirituTextField.text, forKey: "zei")
+        UserDefaults.standard.setValue(self.zeirituTextField.text, forKey: UserDefaultsKey.tax)
     }
 }
 
